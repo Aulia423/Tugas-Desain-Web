@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../CSS/contack.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="judul">
+            Aulia
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="../HTML/Home.html">Home</a></li>
+                <li><a href="../HTML/Information.html">Information</a></li>
+                <li><a href="../HTML/Gallery.html">Gallery</a></li>
+                <li><a href="../HTML/Pendaftaran.html">Pendaftaran</a></li>
+                <li><a href="../HTML/Contack.html">Contack</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- main -->
+    <h1>Contact</h1>
+    <div class="main">
+        <form action="/submit_form.php" method="POST">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+
+</body>
+
+</html>

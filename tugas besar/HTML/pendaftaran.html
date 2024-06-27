@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran</title>
+    <link rel="stylesheet" href="../CSS/pendaftaran.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="judul">
+            Aulia
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="../HTML/Home.html">Home</a></li>
+                <li><a href="../HTML/Information.html">Information</a></li>
+                <li><a href="../HTML/Gallery.html">Gallery</a></li>
+                <li><a href="../HTML/Pendaftaran.html">Pendaftaran</a></li>
+                <li><a href="../HTML/Contack.html">Contack</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Main -->
+    <h1>Pendaftaran</h1>
+
+    <div class="main">
+        <form id="form" method="post">
+            <div class="alert alert-primary">
+                <strong style="font-size: 30px;">Data Diri</strong>
+            </div>
+            <div class="row">
+                <div class="col-sm-7">
+                    <div class="form-group">
+                        <label>Nama Lengkap:</label>
+                        <input type="text" name="nama" class="form-control" placeholder="Masukan Nama Lengkap">
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <div class="form-group">
+                        <label>Nomor Identitas (NIK):</label>
+                        <input type="text" name="nik" class="form-control" placeholder="Masukan Nomor NIK">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label>Tempat Lahir:</label>
+                        <input type="text" name="tempat_lahir" class="form-control" placeholder="Masukan Tempat Lahir">
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <label>Tanggal Lahir:</label>
+                        <input type="date" name="tanggal_lahir" class="form-control">
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <div class="form-group">
+                        <label>Jenis Kelamin:</label>
+                        <select class="form-control" name="jk">
+                            <option>Pilih</option>
+                            <option value="1">Laki-laki</option>
+                            <option value="2">Perempuan</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label>Kewarganegaraan:</label>
+                        <select class="form-control" name="kewarganegaraan">
+                            <option>Pilih</option>
+                            <option value="WNI">Warga Negara Indonesia</option>
+                            <option value="WNA">Warga Negara Asing</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <label>Agama:</label>
+                        <select class="form-control" name="agama">
+                            <option>Pilih</option>
+                            <option value="Islam">Islam</option>
+                            <option value="Kristen">Kristen</option>
+                            <option value="Katolik">Katolik</option>
+                            <option value="Hindu">Hindu</option>
+                            <option value="Budha">Budha</option>
+                            <option value="Lainnya">Lainnya</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <div class="form-group">
+                        <label>Nama Ibu Kandung:</label>
+                        <input type="text" name="nama_ibu" class="form-control" placeholder="Masukan Nama Ibu Kandung">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label>Email:</label>
+                        <input type="email" name="email" class="form-control" placeholder="Masukan Email">
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <label>No Telp:</label>
+                        <input type="text" name="no_telp" class="form-control" placeholder="Masukan No Telp">
+                    </div>
+                </div>
+            </div>
+            <div class="alert alert-primary">
+                <strong>Data Alamat Asal</strong>
+            </div>
+            <div class="row">
+                <div class="col-sm-5">
+                    <div class="form-group">
+                        <label>Alamat:</label>
+                        <textarea class="form-control" name="alamat" rows="2" id="alamat"></textarea>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="form-group">
+                        <label>Kode Pos:</label>
+                        <input type="text" name="kode_pos" class="form-control" placeholder="Kode Pos">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label>Provinsi:</label>
+                        <select class="form-control" name="provinsi" id="provinsi">
+                            <option value="">Pilih Provinsi</option>
+                            <option value="11">Aceh</option>
+                            <option value="12">Sumatera Utara</option>
+                            <option value="13">Sumatera Barat</option>
+                            <option value="14">Riau</option>
+                            <option value="15">Jambi</option>
+                            <option value="16">Sumatera Selatan</option>
+                            <option value="17">Bengkulu</option>
+                            <option value="18">Lampung</option>
+                            <option value="19">Kepulauan Bangka Belitung</option>
+                            <option value="21">Kepulauan Riau</option>
+                            <option value="31">DKI Jakarta</option>
+                            <option value="32">Jawa Barat</option>
+                            <option value="33">Jawa Tengah</option>
+                            <option value="34">DI Yogyakarta</option>
+                            <option value="35">Jawa Timur</option>
+                            <option value="36">Banten</option>
+                            <option value="51">Bali</option>
+                            <option value="52">Nusa Tenggara Barat</option>
+                            <option value="53">Nusa Tenggara Timur</option>
+                            <option value="61">Kalimantan Barat</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label>Kabupaten:</label>
+                        <select class="form-control" name="kabupaten" id="kabupaten">
+                            <option value="">Pilih Kabupaten</option>
+                            <option value="1101">Kabupaten Simeulue</option>
+                            <option value="1102">Kabupaten Aceh Singkil</option>
+                            <option value="1103">Kabupaten Aceh Selatan</option>
+                            <option value="1104">Kabupaten Aceh Tenggara</option>
+                            <option value="1105">Kabupaten Aceh Timur</option>
+                            <option value="1106">Kabupaten Aceh Tengah</option>
+                            <option value="1107">Kabupaten Aceh Barat</option>
+                            <option value="1108">Kabupaten Aceh Besar</option>
+                            <option value="1109">Kabupaten Pidie</option>
+                            <option value="1110">Kabupaten Bireuen</option>
+                            <option value="1111">Kabupaten Aceh Utara</option>
+                            <option value="1112">Kabupaten Aceh Barat Daya</option>
+                            <option value="1113">Kabupaten Gayo Lues</option>
+                            <option value="1114">Kabupaten Aceh Tamiang</option>
+                            <option value="1115">Kabupaten Nagan Raya</option>
+                            <option value="1116">Kabupaten Aceh Jaya</option>
+                            <option value="1117">Kabupaten Bener Meriah</option>
+                            <option value="1118">Kabupaten Pidie Jaya</option>
+                            <option value="1171">Kota Banda Aceh</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label>Kecamatan:</label>
+                        <select class="form-control" name="kecamatan" id="kecamatan">
+                            <option value="">Pilih Kecamatan</option>
+                            <option value="1101010">Teupah Selatan</option>
+                            <option value="1101020">Simeulue Timur</option>
+                            <option value="1101021">Teupah Barat</option>
+                            <option value="1101022">Teupah Tengah</option>
+                            <option value="1101030">Simeulue Tengah</option>
+                            <option value="1101031">Simeulue Cut</option>
+                            <option value="1101040">Salang</option>
+                            <option value="1101050">Simeulue Barat</option>
+                            <option value="1101051">Alafan</option>
+                            <option value="1102010">Simpang Kiri</option>
+                            <option value="1102011">Pulau Banyak</option>
+                            <option value="1102020">Singkil</option>
+                            <option value="1102021">Singkil Utara</option>
+                            <option value="1102022">Kuala Baru</option>
+                            <option value="1102030">Simpang Kanan</option>
+                            <option value="1102031">Gunung Meriah</option>
+                            <option value="1102032">Danau Paris</option>
+                            <option value="1102033">Suro Makmur</option>
+                            <option value="1102042">Singkohor</option>
+                            <option value="1102043">Kota Baharu</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="alert alert-primary">
+                <strong style="font-size: 30px;">Data Orang Tua</strong>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label>Nama Ayah:</label>
+                        <input type="text" name="nama_ayah" class="form-control" placeholder="Masukan Nama Ayah">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label>Nama Ibu:</label>
+                        <input type="text" name="nama_ibu_kandung" class="form-control" placeholder="Masukan Nama Ibu">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label>Pekerjaan Ayah:</label>
+                        <input type="text" name="pekerjaan_ayah" class="form-control"
+                            placeholder="Masukan Pekerjaan Ayah">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label>Pekerjaan Ibu:</label>
+                        <input type="text" name="pekerjaan_ibu_kandung" class="form-control"
+                            placeholder="Masukan Pekerjaan Ibu">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label>Pendidikan Terakhir Ayah:</label>
+                        <select class="form-control" name="pendidikan_ayah">
+                            <option value="SD">SD</option>
+                            <option value="SMP">SMP</option>
+                            <option value="SMA">SMA</option>
+                            <option value="D3">D3</option>
+                            <option value="S1">S1</option>
+                            <option value="S2">S2</option>
+                            <option value="S3">S3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label>Pendidikan Terakhir Ibu:</label>
+                        <select class="form-control" name="pendidikan_ibu_kandung">
+                            <option value="SD">SD</option>
+                            <option value="SMP">SMP</option>
+                            <option value="SMA">SMA</option>
+                            <option value="D3">D3</option>
+                            <option value="S1">S1</option>
+                            <option value="S2">S2</option>
+                            <option value="S3">S3</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label>Penghasilan Bulanan Ayah:</label>
+                        <input type="text" name="penghasilan_ayah" class="form-control"
+                            placeholder="Masukan Penghasilan Bulanan Ayah">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label>Penghasilan Bulanan Ibu:</label>
+                        <input type="text" name="penghasilan_ibu_kandung" class="form-control"
+                            placeholder="Masukan Penghasilan Bulanan Ibu">
+                    </div>
+                </div>
+            </div>
+            <div class="alert alert-primary">
+                <strong>Alamat Orang Tua</strong>
+            </div>
+            <div class="row">
+                <div class="col-sm-5">
+                    <div class="form-group">
+                        <label>Alamat:</label>
+                        <textarea class="form-control" name="alamat_ortu" rows="2" id="alamat_ortu"></textarea>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="form-group">
+                        <label>Kode Pos:</label>
+                        <input type="text" name="kode_pos_ortu" class="form-control" placeholder="Kode Pos">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label>Provinsi:</label>
+                        <select class="form-control" name="provinsi" id="provinsi">
+                            <option value="">Pilih Provinsi</option>
+                            <option value="11">Aceh</option>
+                            <option value="12">Sumatera Utara</option>
+                            <option value="13">Sumatera Barat</option>
+                            <option value="14">Riau</option>
+                            <option value="15">Jambi</option>
+                            <option value="16">Sumatera Selatan</option>
+                            <option value="17">Bengkulu</option>
+                            <option value="18">Lampung</option>
+                            <option value="19">Kepulauan Bangka Belitung</option>
+                            <option value="21">Kepulauan Riau</option>
+                            <option value="31">DKI Jakarta</option>
+                            <option value="32">Jawa Barat</option>
+                            <option value="33">Jawa Tengah</option>
+                            <option value="34">DI Yogyakarta</option>
+                            <option value="35">Jawa Timur</option>
+                            <option value="36">Banten</option>
+                            <option value="51">Bali</option>
+                            <option value="52">Nusa Tenggara Barat</option>
+                            <option value="53">Nusa Tenggara Timur</option>
+                            <option value="61">Kalimantan Barat</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label>Kabupaten:</label>
+                        <select class="form-control" name="kabupaten" id="kabupaten">
+                            <option value="">Pilih Kabupaten</option>
+                            <option value="1101">Kabupaten Simeulue</option>
+                            <option value="1102">Kabupaten Aceh Singkil</option>
+                            <option value="1103">Kabupaten Aceh Selatan</option>
+                            <option value="1104">Kabupaten Aceh Tenggara</option>
+                            <option value="1105">Kabupaten Aceh Timur</option>
+                            <option value="1106">Kabupaten Aceh Tengah</option>
+                            <option value="1107">Kabupaten Aceh Barat</option>
+                            <option value="1108">Kabupaten Aceh Besar</option>
+                            <option value="1109">Kabupaten Pidie</option>
+                            <option value="1110">Kabupaten Bireuen</option>
+                            <option value="1111">Kabupaten Aceh Utara</option>
+                            <option value="1112">Kabupaten Aceh Barat Daya</option>
+                            <option value="1113">Kabupaten Gayo Lues</option>
+                            <option value="1114">Kabupaten Aceh Tamiang</option>
+                            <option value="1115">Kabupaten Nagan Raya</option>
+                            <option value="1116">Kabupaten Aceh Jaya</option>
+                            <option value="1117">Kabupaten Bener Meriah</option>
+                            <option value="1118">Kabupaten Pidie Jaya</option>
+                            <option value="1171">Kota Banda Aceh</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label>Kecamatan:</label>
+                        <select class="form-control" name="kecamatan" id="kecamatan">
+                            <option value="">Pilih Kecamatan</option>
+                            <option value="1101010">Teupah Selatan</option>
+                            <option value="1101020">Simeulue Timur</option>
+                            <option value="1101021">Teupah Barat</option>
+                            <option value="1101022">Teupah Tengah</option>
+                            <option value="1101030">Simeulue Tengah</option>
+                            <option value="1101031">Simeulue Cut</option>
+                            <option value="1101040">Salang</option>
+                            <option value="1101050">Simeulue Barat</option>
+                            <option value="1101051">Alafan</option>
+                            <option value="1102010">Simpang Kiri</option>
+                            <option value="1102011">Pulau Banyak</option>
+                            <option value="1102020">Singkil</option>
+                            <option value="1102021">Singkil Utara</option>
+                            <option value="1102022">Kuala Baru</option>
+                            <option value="1102030">Simpang Kanan</option>
+                            <option value="1102031">Gunung Meriah</option>
+                            <option value="1102032">Danau Paris</option>
+                            <option value="1102033">Suro Makmur</option>
+                            <option value="1102042">Singkohor</option>
+                            <option value="1102043">Kota Baharu</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <button type="submit" name="Submit" id="Submit" class="btn btn-primary">Daftar</button>
+                    <button type="reset" class="btn btn-secondary">Reset</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+    </div>
+
+
+</body>
+
+</html>

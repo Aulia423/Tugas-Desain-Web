@@ -1,0 +1,56 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.kalkulator {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.1);
+    padding: 30px;
+    width: 400px;
+}
+
+.kalkulator h1 {
+    text-align: center;
+}
+
+.kalkulator input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+.kalkulator button {
+    width: 23%;
+    padding: 10px;
+    margin: auto;
+    border: none;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.kalkulator button:hover {
+    background-color: #ddd;
+}
+
+.kalkulator h2 {
+    text-align: center;
+}
+

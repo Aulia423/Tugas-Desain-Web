@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(255,111,0);
+background: linear-gradient(162deg, rgba(255,111,0,1) 0%, rgba(244,141,60,1) 100%);
+    font-family: "Poppins", sans-serif;
+    padding: 0 24px;
+    height: 100vh;
+}
+
+.header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 50px;
+    color: white;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 4px;
+}
+
+.menu ul li {
+    margin: 10px;
+}
+
+.menu ul li a {
+    display: block;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    list-style: none;
+    text-decoration: none;
+    padding: 6px 12px;
+    margin-top: 10px;
+    margin: 10px;
+}
+
+.menu ul li a:hover {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(177, 61, 19);
+    background-color: white;
+    border-radius: 20px;
+    scale: 105%;
+    transition: 0.2s;
+}
+
+.main {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.kiri {
+    width: 50%;
+    text-align: center;
+}
+
+.kiri img {
+    width: 100%;
+    max-width: 600px;
+}
+
+.kanan {
+    width: 50%;
+    padding: 10px;
+    color: white;
+}
+
+.kanan h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.kanan p {
+    max-width: 500px;
+    margin-bottom: 24px;
+    color: #545353;
+}
+
+.kanan input {
+    border: none;
+    padding: 12px 24px;
+    width: 200px;
+    border-radius: 8px 0 0 8px;
+    box-shadow: 17px 19px 38px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 17px 19px 38px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 17px 19px 38px 0px rgba(0,0,0,0.75);
+}
+
+.kanan button {
+    border: none;
+    padding: 12px 24px;
+    background-color: rgb(49, 49, 134);
+    margin-left: -4px;
+    border-radius: 0 8px 8px 0;
+    color: white;
+    box-shadow: 17px 19px 38px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 17px 19px 38px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 17px 19px 38px 0px rgba(0,0,0,0.75);
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .brand {
+        font-size: 40px;
+    }
+
+    .menu ul li a {
+        font-size: 18px;
+    }
+
+    .kanan h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 992px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .kiri, .kanan {
+        width: 100%;
+    }
+
+    .kiri img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .kanan h1 {
+        font-size: 36px;
+    }
+
+    .kanan p {
+        font-size: 16px;
+    }
+
+    .kanan input, .kanan button {
+        width: 100%;
+        border-radius: 8px;
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu ul li {
+        margin: 5px 0;
+    }
+
+    .brand {
+        font-size: 30px;
+    }
+
+    .kanan h1 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 576px) {
+    .body {
+        padding: 0 12px;
+    }
+
+    .brand {
+        font-size: 24px;
+    }
+
+    .menu ul li a {
+        font-size: 16px;
+    }
+
+    .kanan h1 {
+        font-size: 24px;
+    }
+
+    .kanan p {
+        font-size: 14px;
+    }
+
+    .kanan input, .kanan button {
+        padding: 10px 20px;
+    }
+}
